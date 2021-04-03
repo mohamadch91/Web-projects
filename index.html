@@ -9,6 +9,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css' rel='stylesheet' type='text/css'>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <!-- head image -->
     <div class="Headerimage">
@@ -53,7 +54,7 @@
 </head>
 
 <body>
-    <div class="game_select">
+    <div class="game_select" id="game_select1">
         <div class="background_img">
             <div class="container">
                 <div class="col-md-8 offset-md-2" id="modal_back">
@@ -81,7 +82,7 @@
             <div class="d-flex flex-row-reverse bd-highlight mb-3">
                 <div class="table_icon p-2 bd-highlight"> <img src="word_table.png" class="table_icon" alt=""></div>
                 <div class="game bd-highlight fs-4 fw-bold  flex-shrink-0"> بازی جدول کلمات</div>
-                <div class="time p-2 bd-highlight fs-1 col-9 ">29:40</div>
+                <div class="time p-2 bd-highlight fs-1 col-9  ">29:40</div>
             </div>
             <div style="color: blue;" class="time_text float-start">زمان باقی مانده </div>
         </div>
@@ -447,10 +448,10 @@
                 <div class="d-flex flex-row-reverse bd-highlight mb-3 col-md-3 offset-6">
                     <div class="p-2 bd-highlight col-md-1"> <img src="help-circle.png" class="table_icon" alt=""></div>
                     <div class="bd-highlight fs-7 fw-bold  flex-shrink-0 mt-2 " style="color: rgba(101, 100, 107, 0.747);"> بررسی پاسخ ها </div>
-                    <button id="send_button" href="" class=" flex-shrink-0 rounded btn-sm px-3 py-2 text-white shadow-lg  " style="background: #002b82 ">ارسال پاسخ</button>
+                    <button id="send_button" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class=" flex-shrink-0 rounded btn-sm px-3 py-2 text-white shadow-lg  " style="background: #002b82 ">ارسال پاسخ</button>
                 </div>
             </div>
-            <div class="col-md-3 offset-9 flex-fill flex-shrink-0" id="vertical_row">
+            <div class="col-md-3 offset-8 flex-fill flex-shrink-0" id="vertical_row">
                 <div class="d-flex flex-row-reverse bd-highlight mb-3 col-md-3 offset-6">
                     <div id="vertical_icon" class="p-2 bd-highlight col-md-1"> <img src="horz.png" class="table_icon" alt=""></div>
                     <div id="horz" class="bd-highlight fs-4 fw-bold  flex-shrink-0"> ردیف عمودی</div>
@@ -514,16 +515,211 @@
     </div>
     <div id="section4">
         <div class="container">
-
             <div class="d-flex flex-row-reverse bd-highlight mb-3">
                 <div class="table_icon p-2 bd-highlight"> <img src="pic_g.png" class="table_icon" alt=""></div>
                 <div class="game bd-highlight fs-4 fw-bold  flex-shrink-0"> بازی جدول کلمات</div>
-                <div style="" class=" flex-shrink-0"> در این بازی تصاویر را جفت به جفت در خاطر بسپارید و با انتخاب هر باکس آن ها را پیدا کنید </div>
-                <div class="time p-2 bd-highlight fs-1 col-9 ">4:40</div>
+                <div class=" flex-shrink-0 mt-4 me-3" style="color: rgb(100, 100, 100);"> در این بازی تصاویر را جفت به جفت در خاطر بسپارید و با انتخاب هر باکس آن ها را پیدا کنید </div>
+                <div class="time p-2 bd-highlight fs-1 col-10 me-4" style=" color: crimson; position:absolute ;">5:30</div>
             </div>
             <div style="color: blue;" class="time_text float-start">زمان باقی مانده </div>
         </div>
+        <div id="pic" class=" mb-5 offset-3" style=" background-color: rgb(255, 255, 255); padding-top: 0.5cm; width: 50%; ">
+            <div class="col-md-6 offset-3 align-self-center ">
+                <table class="picture table table-bordered border-info bg-white ">
+                    <tbody>
+                        <tr class=" text-center " scope="row ">
+                            <td><img src="img_1.png "></td>
+                            <td><img src="img_2.png "></td>
+                            <td><img src="img_3.png "></td>
+                            <td><img src="img_4.png "></td>
+                            <td><img src="img_5.png "></td>
+                        </tr>
+                        <tr class=" text-center " scope="row1 ">
+                            <td><img src="img_6.png "></td>
+                            <td><img src="img_7.png "></td>
+                            <td><img src="img_8.png "></td>
+                            <td><img src="img_9.png "></td>
+                            <td><img src="img_10.png "></td>
+                        </tr>
+
+                        <tr scope="row " class=" text-center ">
+                            <td><img src="img_11.png "></td>
+                            <td><img src="img_12.png "></td>
+                            <td><img src="img_13.png "></td>
+                            <td><img src="img_14.png "></td>
+                            <td><img src="img_15.png "></td>
+                        </tr>
+                        <tr class=" text-center " scope="row ">
+                            <td><img src="img_1.png "></td>
+                            <td><img src="img_2.png "></td>
+                            <td><img src="img_3.png "></td>
+                            <td><img src="img_4.png "></td>
+                            <td><img src="img_5.png "></td>
+                        </tr>
+                        <tr scope="row " class=" text-center ">
+                            <td><img src="img_6.png "></td>
+                            <td><img src="img_7.png "></td>
+                            <td><img src="img_8.png "></td>
+                            <td><img src="img_9.png "></td>
+                            <td><img src="img_10.png "></td>
+                        </tr>
+                        <tr scope="row " class=" text-center ">
+                            <td><img src="img_11.png "></td>
+                            <td><img src="img_12.png "></td>
+                            <td><img src="img_13.png "></td>
+                            <td><img src="img_14.png "></td>
+                            <td><img src="img_15.png "></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <button id="ersal" href=" " class="btn  align-self-center flex-shrink-0 rounded btn-sm px-3 py-2 text-white shadow-lg " data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background: #002b82  ">ارسال پاسخ</button>
+                <div class="modal  fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <div class="modal-body modal-dialog-scrollable">
+                                <div id="popup1" class="overlay">
+                                    <div class="popup" style="background: url(Modal1400-2.jpg); size: 100px; overflow-x: scroll; ;background-position: center center; background-repeat: no-repeat;">
+                                        <div class="row py-5 my-5">
+                                            <div class="col-12 mt-5">
+                                                <p class="h5 text-center" style="color: rgb(255, 255, 255);">تبریک شما برنده کد تخفیف 100 درصد اشتراک یک ماهه فیلیمو شدید!</p>
+                                                <p class="h5 text-center" style="color: rgb(255, 255, 255);">جهت دریافت پیامک جایزه فرم زیر را تکمیل کنید</p>
+                                            </div>
+                                            <div class="container">
+                                                <div class="row mt-3">
+                                                    <div class="col-md-2 offset-md-4">
+                                                        <input type="text" class="form-control form-control-lg py-3" placeholder="نام و نام خانوادگی" aria-label="نام و نام خانوادگی">
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <input type="text" class="form-control form-control-lg py-3" placeholder="نام شهر" aria-label="نام شهر">
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-md-2 offset-md-4">
+                                                        <input type="text" class="form-control form-control-lg py-3" placeholder="موبایل" aria-label="موبایل">
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <input type="text" class="form-control form-control-lg py-3" placeholder="صفحه اینستاگرام" aria-label="صفحه اینستاگرام">
+                                                    </div>
+                                                </div>
+                                                <button class="btn offset-md-5 rounded mt-5 btn-lg py-3 text-primary saman-shadow mt-3" style="background: #fff;font-size: 18px; color: #173e8e;">دریافت پیامک</button>
+                                            </div>
+                                        </div>
+                                        <a class="close" href="#ersal" data-bs-dismiss="modal"> ×</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
+    <div class="section5">
+        <div class="pishnahad" style="background: #edf0f8;">
+            <div class="container pt-5">
+                <div class="row pb-5">
+                    <div class="col-12 pb-5 mb-5 text-right">
+                        <img src="heart-icon.png" alt="" cl ass="d-inline">
+                        <p class="h6 d-inline mx-3 fw-bold" style="color: #002b82;">دریافت کارت تبریک نوروزی</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pishnahd" style=" margin-bottom:100px;height: 3in; background:#00194b url(border-line.png); background-size: cover;border-top: 5px solid #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="aks col-md-5 h-100px">
+                    <a href="#" class=" position-absolute">
+                        <img src="poster-right.png" alt="" class="w-100">
+                    </a>
+                </div>
+                <div class="aks col-md-5 offset-md-2 h-100px">
+                    <a href="#" class=" position-absolute">
+                        <img src="poster-left.png" alt="" class="w-100">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section6">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 pb-5 text-right">
+                    <img src=" star-icon.png" alt="" cl ass="d-inline">
+                    <p class="h6 d-inline mx-3 mt-4 fw-bold" style="color: #002b82;">پیشنهادات نوروزی</p>
+                </div>
+            </div>
+            <div class="row w-100 px-5 mx-auto">
+                <div class="col-md-4 mb-4">
+                    <a class="text-center  main_table1 border-0 rounded bg-white px-3 py-5 d-block text-decoration-none text-reset" href="https://www.si24.ir/fa/norooz99">
+                        <p class="h6 mx-3 fw-bold" style="color: #002b82;">فیلم‌هایی که خوب است ببینیم</p>
+                        <img src=" movies.png" alt="" class="m-5 mx-auto w-75">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="text-center  main_table1 border-0 rounded bg-white px-3 py-5 d-block text-decoration-none text-reset" href="https://www.si24.ir/fa/norooz99">
+                        <p class="h6 mx-3 fw-bold" style="color: #002b82;"> عادت‌های خوبی در خود به وجود بیاوریم</p>
+                        <img src=" habits.png" alt="" class="m-5 mx-auto w-75">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="text-center  main_table1 border-0 rounded bg-white px-3 py-5 d-block text-decoration-none text-reset" href="https://www.si24.ir/fa/norooz99">
+                        <p class="h6 mx-3 fw-bold" style="color: #002b82;"> ورزش‌هایی که به سلامتی ما کمک می‌کند</p>
+                        <img src=" workouts.png" alt="" class="m-5 mx-auto w-75">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="text-center  main_table1 border-0 rounded bg-white px-3 py-5 d-block text-decoration-none text-reset" href="https://www.si24.ir/fa/norooz99">
+                        <p class="h6 mx-3 fw-bold" style="color: #002b82;">فعالیت‌هایی خوب برای اوقات فراغت</p>
+                        <img src=" activities.png" alt="" class="m-5 mx-auto w-75">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="text-center  main_table1 border-0 rounded bg-white px-3 py-5 d-block text-decoration-none text-reset" href="https://www.si24.ir/fa/norooz99">
+                        <p class="h6 mx-3 fw-bold" style="color: #002b82;">رژیم‌های غذایی که به سلامت ما کمک می‌کند</p>
+                        <img src=" diet2.png" alt="" class="m-5 mx-auto w-75">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="text-center  main_table1 border-0 rounded bg-white px-3 py-5 d-block text-decoration-none text-reset" href="https://www.si24.ir/fa/norooz99">
+                        <p class="h6 mx-3 fw-bold" style="color: #002b82;">کتاب‌هایی که خوب است بخوانیم</p>
+                        <img src=" books.png" alt="" class="m-5 mx-auto w-75">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4 mx-auto">
+                    <a class="text-center  main_table1 border-0 rounded bg-white px-3 py-5 d-block text-decoration-none text-reset" href="https://www.si24.ir/fa/norooz99">
+                        <p class="h6 mx-3 fw-bold" style="color: #002b82;">غذاهایی که به سادگی میتوانیم درست کنیم</p>
+                        <img src=" recipes.png" alt="" class="m-5 mx-auto w-75">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 pt-4">
+            <div class="col-12 text-center">
+                <p class="h1 fw-boldest mb-0" style="color: #ee4343;">021-8943</p>
+                <p class="h6 d-inline mx-3 fw-bold" style="color: #002b82;">مرکز تماس بیمه سامان</p>
+
+                <p class="mb-0 mt-3" style="font-size: 14px;font-weight: 500;color:#585858;">آدرس: تهران، خیابان سید جمال الدین اسد آبادی، شماره 433</p>
+                <p style="font-size: 14px;font-weight: 500;color:#585858;">پست الکترونیک: complain@samaninsurance.ir </p>
+                <img src="Telegram.png" class=" pe-3 ps-3">
+                <img src="f.png" class=" pe-3 ps-3">
+                <img src="in.png" alt="" class=" pe-3 ps-3">
+                <img src="Aparat.png" alt="" class=" pe-3 ps-3">
+                <img src="insta.png" alt="" class=" pe-3 ps-3">
+            </div>
+        </div>
+
+
+
+
 
 
 </body>

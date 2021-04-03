@@ -1,3 +1,8 @@
+@import url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css');
+* body head {
+    font-family: shabnam;
+}
+
 .background_image {
     background-image: url("Bg1400-1.jpg");
     background-size: cover;
@@ -172,6 +177,10 @@ div::-webkit-scrollbar-track-piece {
     box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.46), 0px 10px 5px 0px rgba(136, 144, 165, 0.22), 0px 40px 59px 0px rgba(170, 180, 208, 0.54);
 }
 
+.main_table1 {
+    box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.46), 0px 10px 5px 0px rgba(136, 144, 165, 0.22), 0px 40px 59px 0px rgba(170, 180, 208, 0.54);
+}
+
 #table_g {
     direction: rtl;
 }
@@ -236,4 +245,132 @@ table {
     max-width: 3.1in;
     overflow-x: hidden;
     overflow-y: scroll;
+}
+
+.picture {
+    margin-top: 1in;
+    padding-top: 2in;
+}
+
+.picture td {
+    width: 1.5cm;
+}
+
+#ersal {
+    margin-left: 3.5cm;
+}
+
+.aks {
+    margin-top: -1in;
+}
+
+.section5 {
+    direction: rtl;
+}
+
+#section6 {
+    direction: rtl;
+}
+
+.mbox {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: none;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal1 {
+    margin: 70px auto;
+    margin-bottom: 5in;
+    height: 100vh;
+    padding: 4.5vw;
+    background: red;
+    border-radius: 5px;
+    z-index: 100000;
+}
+
+.modal1 h2 {
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.modal1 h5 {
+    color: white;
+    background: white;
+}
+
+.modal1 .close {
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.modal1 .close:hover {
+    color: #E5F720;
+}
+
+.overlay {
+    size: 100px;
+    margin-bottom: 100in;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    height: 100vh;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    overflow-x: scroll;
+    size: 100px;
+    background-size: 50px;
+    margin: 70px auto;
+    padding: 4.5vw;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 85%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    z-index: 100000;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #E5F720;
+}
+
+.popup .content-1,
+.content-2 {
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;
 }
