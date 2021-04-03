@@ -1,58 +1,241 @@
-.background_image{
-    background-image:url("Bg1400-1.jpg") ;
+.background_image {
+    background-image: url("Bg1400-1.jpg");
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100vh ;
+    height: 100vh;
     margin-left: -5px;
     float: right;
 }
-.offer{
-    color: white;
-    margin-top:  11vh;
 
+.offer {
+    color: white;
+    margin-top: 11vh;
 }
-.cart_text{
+
+.cart_text {
     color: white;
     margin: 11vh 0 0 10vh;
     padding-left: 50px;
+}
 
-}
-.logo{
+.logo {
     padding-left: 10vh;
-    padding: top 10vh; ;
-    margin:5vh 0 0 4.5in ;
+    padding: top 10vh;
+    ;
+    margin: 5vh 0 0 4.5in;
 }
-#cart  {
-    color:white;
+
+#cart {
+    color: white;
     text-decoration: none;
 }
-.new_year{
+
+.new_year {
     color: white;
     margin-top: 1.8cm;
     margin-right: 0.8cm;
     text-shadow: 0px 0px 10px white;
-
 }
-#new1400{
+
+#new1400 {
     margin-top: -2cm;
     margin-left: 2cm;
 }
-#game_text{
+
+#game_text {
     color: white;
     margin-top: -1in;
     padding-right: 1.5cm;
-    
-
 }
-.start{
+
+.start {
     text-align: center;
     border-radius: 50%;
-    border: 3px solid  rgb(81, 136, 209);
+    border: 3px solid rgb(81, 136, 209);
     color: rgb(7, 7, 156);
     width: 75px;
     height: 75px;
     padding-right: 0.4cm;
     margin-left: 30px;
-    
+}
+
+.background_img {
+    background-image: url("second-back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 80vh;
+    margin-left: -5px;
+    float: right;
+}
+
+#modal_back {
+    background-image: url("Modal1400-2.jpg");
+    overflow: hidden;
+    background-repeat: no-repeat;
+    height: 75vh;
+    width: 60%;
+}
+
+.which {
+    color: white;
+    padding-top: 1.5in;
+}
+
+#shape {
+    padding-top: 1cm;
+}
+
+.game_text {
+    color: white;
+    text-decoration: none;
+    padding-right: 3.5cm;
+}
+
+#table {
+    padding-top: 1in;
+}
+
+.game {
+    color: blue;
+    margin-top: 0.6cm;
+    padding-right: 0.7cm;
+}
+
+.time {
+    color: red;
+    padding-right: 0.7cm;
+    margin-right: 1.2cm;
+}
+
+.time_text {
+    margin-top: -1cm;
+}
+
+#horzintal_icon {
+    margin-right: 0.7cm;
+}
+
+#horz {
+    color: rgb(48, 87, 119);
+}
+
+.horzintal_numbers {
+    color: rgb(7, 7, 156);
+    float: right;
+    padding-left: 0.2cm;
+}
+
+div ::-webkit-scrollbar {
+    width: 3px;
+}
+
+div::-webkit-scrollbar-thumb {
+    background-color: rgb(7, 7, 156);
+    overflow-x: hidden;
+}
+
+div::-webkit-scrollbar-track-piece {
+    background-color: rgb(100, 100, 100);
+    width: 1px;
+    overflow-x: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#horzintal_question {
+    margin-right: 3cm;
+    padding-top: 1cm;
+    max-width: 3.5in;
+    text-overflow: ellipsis;
+    border-top: solid 1px rgb(32, 28, 80);
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+    border-right: solid 1px rgb(32, 28, 80);
+    border-bottom: solid 1px rgb(32, 28, 80);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#question_box {
+    max-height: 75vh;
+    max-width: 3.1in;
+    margin-right: 0.2cm;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#main_table {
+    box-shadow: 0px 4px 0px 0px rgba(255, 255, 255, 0.46), 0px 10px 5px 0px rgba(136, 144, 165, 0.22), 0px 40px 59px 0px rgba(170, 180, 208, 0.54);
+}
+
+#table_g {
+    direction: rtl;
+}
+
+#table_g th {
+    color: #002b82;
+}
+
+#table_g tr td {
+    border-top: 1px solid #c8ccd1;
+    border-left: 1px solid #c8ccd1;
+}
+
+#table_g tbody th {
+    border-left: 1px solid #c8ccd1;
+}
+
+#table_g tbody td.disabled {
+    background: #c8ccd1;
+}
+
+#table_g tbody tr:last-child td {
+    border-bottom: 1px solid #c8ccd1;
+}
+
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+#table_g input,
+#table_g input:active {
+    border-radius: 0;
+    text-align: center;
+    border: 0;
+}
+
+#send_button {
+    margin-right: 1cm;
+}
+
+#vertical_row {
+    background-color: brown;
+    position: absolute;
+}
+
+#vertical_question {
+    margin-right: 3cm;
+    padding-top: 1cm;
+    max-width: 3.5in;
+    text-overflow: ellipsis;
+    border-top: solid 1px rgb(32, 28, 80);
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+    border-right: solid 1px rgb(32, 28, 80);
+    border-bottom: solid 1px rgb(32, 28, 80);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#question_box_ver {
+    max-height: 75vh;
+    max-width: 3.1in;
+    margin-right: 0.2cm;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }

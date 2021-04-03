@@ -7,12 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=!, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <!-- head image -->
     <div class="Headerimage">
         <div class="background_image fa-pull-right">
@@ -28,7 +25,7 @@
                         <div> <a id="cart" href="#">پیشنهادات نوروزی</a></div>
                     </div>
                     <div class="logo col-md-2 offset-md-5">
-                        <img src="saman_logo.png" class="img-fluid"> 
+                        <img src="saman_logo.png" class="img-fluid">
                     </div>
                 </div>
                 <div class="row">
@@ -37,17 +34,17 @@
                     </div>
                 </div>
                 <div class="row">
-                      <div class=" col-md-4 offset-md-3">
-                          <img id="new1400" src="1400p1.png" class="img-fluid">
-                      </div>
+                    <div class=" col-md-4 offset-md-3">
+                        <img id="new1400" src="1400p1.png" class="img-fluid">
+                    </div>
                 </div>
                 <div class="row">
-                    <p id="game_text" class="text-center fs-5" >!بازی کن و عیدی بگیر</p>
+                    <p id="game_text" class="text-center fs-5">!بازی کن و عیدی بگیر</p>
                 </div>
                 <div class="row">
                     <div class="col-md-2 offset-md-5">
-                    <button type="submit" class="start  btn btn-light">شروع</button>
-                </div>
+                        <button type="submit" class="start  btn btn-light">شروع</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -56,6 +53,466 @@
 </head>
 
 <body>
+    <div class="game_select">
+        <div class="background_img">
+            <div class="container">
+                <div class="col-md-8 offset-md-2" id="modal_back">
+                    <div class="row">
+                        <p class=" which text-center fs-4">کدام بازی را انجام می دهید؟</p>
+                    </div>
+                    <div class="row">
+                        <div id="shape" class="col-md-6 offset-md-3 float start-0">
+                            <img src="shape_game.png" class="img-fluid" alt="">
+                            <img src="table_game.png" class="img-fluid float-end" alt="">
+                        </div>
+                        <div class="col-md-9  offset-md-3">
+                            <a href="#" class="game_text fs-4"> جدول کلمات </a>
+                            <a href="#" id="word" class="game_text fs-4"> جدول تصاویر </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="container">
+            <div class="row" id="table"></div>
+            <div class="d-flex flex-row-reverse bd-highlight mb-3">
+                <div class="table_icon p-2 bd-highlight"> <img src="word_table.png" class="table_icon" alt=""></div>
+                <div class="game bd-highlight fs-4 fw-bold  flex-shrink-0"> بازی جدول کلمات</div>
+                <div class="time p-2 bd-highlight fs-1 col-9 ">29:40</div>
+            </div>
+            <div style="color: blue;" class="time_text float-start">زمان باقی مانده </div>
+        </div>
+        <div class="d-flex flex-row-reverse  bd-highlight mb-3" id="table_game">
+            <div class="col-md-3 flex-fill flex-shrink-0" id="horzintal">
+                <div class="d-flex flex-row-reverse bd-highlight mb-3 col-md-3 offset-6">
+                    <div id="horzintal_icon" class="p-2 bd-highlight col-md-1"> <img src="ver.png" class="table_icon" alt=""></div>
+                    <div id="horz" class="bd-highlight fs-4 fw-bold  flex-shrink-0"> ردیف افقی</div>
+                </div>
+                <div id="horzintal_question" class="hq float-end  " style="padding-right: -3cm;">
+                    <div id="question_box" class="  ">
+                        <ul class=" list-group list-group-flush text-end ">
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers text-end"> 1  </span> اثری از مولانا جلال الدین محمد بلخی – نام سابق شهرستان تنکابن
+
+                            </li>
+
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers">  2  </span> سر – دورافتاده – از ایالات کشور آمریکا
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers">  3  </span> برابری – داخل شدن
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 4  </span> جوشهای ریز روی پوست – دیدن منظره از دور – سلب کننده
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 5 </span> تکرار حرفی از الفبا – از صنایع دستی ایران – شهری در آلمان
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers border-0"> 6 </span> قوت لایموت – دوست و همدم – اشاره به دور – نام ترکی
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 7 </span> از شهرهای خوزستان – نام یکی از پیامبران الهی
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 8 </span> رسم کننده – مساوی عامیانه – نت سوم موسیقی – پوشش برای سر
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 9 </span> مدیریت و سروری – شیطانی
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 10 </span> کتابی معروف درباره خاطرات جنگ تحمیلی – محصول مرداب – بهره - دارو
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 11 </span> بازی دوران کودکی – نشان دهنده راه – کجاست؟
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 12 </span> در امنیت و سلامت کامل – پایان پذیر – امر به آشامیدن
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 13 </span> در حال دویدن – فراری
+                            </li>
+
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 14 </span> وکیل – تاوه نان پزی – سوگند
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 15 </span> زنده – از آثار شیخ بهایی
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="main_table" class="col-md-6 offset-3">
+                <div id="table_g">
+                    <table class="table rounded p-4 mb-3 w-100 table-borderless">
+                        <thead class=" text-center">
+                            <th></th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+
+                        </thead>
+                        <tbody class=" text-center">
+                            <tr id="number_main " class=" col-md-5">
+                                <tr>
+                                    <th>1</th>
+                                    <td><input type="text" name="field_1_1" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_1_2" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_1_3" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_1_4" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_1_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_1_6" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_1_7" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_1_8" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" maxlength="1" name="field_1_8" class="w-100"></td>
+                                    <td><input type="text" maxlength="1" name="field_1_9" class="w-100"></td>
+                                    <td><input type="text" maxlength="1" name="field_1_10" class="w-100"></td>
+                                    <td><input type="text" maxlength="1" name="field_1_11" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_1_8" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" maxlength="1" class="w-100"></td>
+                                </tr>
+                                <tr>
+                                    <th>۲</th>
+                                    <td><input type="text" name="field_2_1" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_2_2" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_2_3" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_2_4" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" name="field_2_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_2_6" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_2_7" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_2_8" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_2_9" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_2_10" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_2_11" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_2_12" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_2_13" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_2_14" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_2_15" maxlength="1" class="w-100"></td>
+                                </tr>
+                                <tr>
+                                    <th>۳</th>
+                                    <td><input type="text" name="field_3_1" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_3_2" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_3_3" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_3_4" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_3_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_3_6" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_3_7" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_3_8" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_3_9" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_3_10" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_3_11" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_3_12" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_3_13" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_3_14" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_3_15" maxlength="1" class="w-100"></td>
+                                </tr>
+                                <tr>
+                                    <th>۴</th>
+                                    <td><input type="text" name="field_4_1" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_4_2" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_4_3" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_4_4" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_4_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_4_6" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_4_7" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_4_8" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_4_9" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_4_10" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_4_11" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" name="field_4_12" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_4_13" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_4_14" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_4_15" maxlength="1" class="w-100" disabled></td>
+                                </tr>
+                                <tr>
+                                    <th>۵</th>
+                                    <td><input type="text" name="field_5_1" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_5_2" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_5_3" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" name="field_5_4" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_5_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_5_6" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_5_7" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_5_8" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_5_9" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_5_10" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_5_11" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_5_12" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_5_13" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_5_14" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_5_15" maxlength="1" class="w-100"></td>
+                                </tr>
+                                <tr>
+                                    <th>۶</th>
+                                    <td><input type="text" name="field_6_1" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_6_2" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_6_3" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_6_4" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_6_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_6_6" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_6_7" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_6_8" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_6_9" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_6_10" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_6_11" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_6_12" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_6_13" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_6_14" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_6_15" maxlength="1" class="w-100"></td>
+                                </tr>
+                                <tr>
+                                    <th>۷</th>
+                                    <td><input type="text" name="field_7_1" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_7_2" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_7_3" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_7_4" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_7_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_7_6" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_7_7" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_7_8" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_7_9" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" name="field_7_10" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_7_11" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_7_12" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_7_13" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_7_14" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_7_15" maxlength="1" class="w-100"></td>
+                                </tr>
+                                <tr>
+                                    <th>۸</th>
+                                    <td><input type="text" name="field_8_1" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_8_2" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_8_3" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_8_4" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" name="field_8_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_8_6" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_8_7" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" name="field_8_8" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_8_9" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_8_10" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_8_11" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_8_12" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_8_13" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_8_14" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_8_15" maxlength="1" class="w-100"></td>
+                                </tr>
+                                <tr>
+                                    <th>۹</th>
+                                    <td class="disabled"><input type="text" name="field_9_1" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" name="field_9_2" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_9_3" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_9_4" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_9_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_9_6" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_9_7" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_9_8" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_9_9" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_9_10" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_9_11" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_9_12" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_9_13" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" name="field_9_14" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_9_15" maxlength="1" class="w-100"></td>
+                                </tr>
+                                <tr>
+                                    <th>۱۰</th>
+                                    <td><input type="text" name="field_10_1" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_10_2" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" name="field_10_3" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_10_4" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_10_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_10_6" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_10_7" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_10_8" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_10_9" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_10_10" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_10_11" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_10_12" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_10_13" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_10_14" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_10_15" maxlength="1" class="w-100"></td>
+                                </tr>
+                                <tr>
+                                    <th>۱۱</th>
+                                    <td><input type="text" name="field_11_1" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_11_2" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_11_3" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_11_4" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" name="field_11_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_11_6" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_11_7" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_11_8" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_11_9" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_11_10" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_11_11" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_11_12" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_11_13" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_11_14" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_11_15" maxlength="1" class="w-100"></td>
+                                </tr>
+                                <tr>
+                                    <th>۱۲</th>
+                                    <td><input type="text" name="field_12_1" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_12_2" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_12_3" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_12_4" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" name="field_12_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_12_6" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_12_7" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_12_8" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_12_9" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_12_10" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_12_11" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_12_12" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_12_13" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_12_14" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_12_15" maxlength="1" class="w-100"></td>
+                                </tr>
+                                <tr>
+                                    <th>۱۳</th>
+                                    <td><input type="text" name="field_13_1" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_13_2" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_13_3" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_13_4" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_13_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_13_6" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_13_7" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_13_8" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" name="field_13_9" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_13_10" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_13_11" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" name="field_13_12" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_13_13" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_13_14" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_13_15" maxlength="1" class="w-100"></td>
+                                </tr>
+                                <tr>
+                                    <th>۱۴</th>
+                                    <td><input type="text" name="field_14_1" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_14_2" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_14_3" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_14_4" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_14_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_14_6" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_14_7" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_14_8" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_14_9" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_14_10" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_14_11" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_14_12" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_14_13" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_14_14" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_14_15" maxlength="1" class="w-100" disabled></td>
+                                </tr>
+                                <tr>
+                                    <th>۱۵</th>
+                                    <td><input type="text" name="field_15_1" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_15_2" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_15_3" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" name="field_15_4" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_15_5" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_15_6" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_15_7" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_15_8" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" name="field_15_9" maxlength="1" class="w-100"></td>
+                                    <td class="disabled"><input type="text" name="field_15_10" maxlength="1" class="w-100" disabled></td>
+                                    <td><input type="text" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" maxlength="1" class="w-100"></td>
+                                    <td><input type="text" maxlength="1" class="w-100"></td>
+                                </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="d-flex flex-row-reverse bd-highlight mb-3 col-md-3 offset-6">
+                    <div class="p-2 bd-highlight col-md-1"> <img src="help-circle.png" class="table_icon" alt=""></div>
+                    <div class="bd-highlight fs-7 fw-bold  flex-shrink-0 mt-2 " style="color: rgba(101, 100, 107, 0.747);"> بررسی پاسخ ها </div>
+                    <button id="send_button" href="" class=" flex-shrink-0 rounded btn-sm px-3 py-2 text-white shadow-lg  " style="background: #002b82 ">ارسال پاسخ</button>
+                </div>
+            </div>
+            <div class="col-md-3 offset-9 flex-fill flex-shrink-0" id="vertical_row">
+                <div class="d-flex flex-row-reverse bd-highlight mb-3 col-md-3 offset-6">
+                    <div id="vertical_icon" class="p-2 bd-highlight col-md-1"> <img src="horz.png" class="table_icon" alt=""></div>
+                    <div id="ver" class="bd-highlight fs-4 fw-bold  flex-shrink-0"> ردیف افقی</div>
+                </div>
+                <div id="vertical_question" class="hq float-end  " style="padding-right: -3cm;">
+                    <div id="question_box_ver" class="  ">
+                        <ul class=" list-group list-group-flush text-end ">
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers text-end"> 1  </span> اثری از مولانا جلال الدین محمد بلخی – نام سابق شهرستان تنکابن
+
+                            </li>
+
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers">  2  </span> سر – دورافتاده – از ایالات کشور آمریکا
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers">  3  </span> برابری – داخل شدن
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 4  </span> جوشهای ریز روی پوست – دیدن منظره از دور – سلب کننده
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 5 </span> تکرار حرفی از الفبا – از صنایع دستی ایران – شهری در آلمان
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers border-0"> 6 </span> قوت لایموت – دوست و همدم – اشاره به دور – نام ترکی
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 7 </span> از شهرهای خوزستان – نام یکی از پیامبران الهی
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 8 </span> رسم کننده – مساوی عامیانه – نت سوم موسیقی – پوشش برای سر
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 9 </span> مدیریت و سروری – شیطانی
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 10 </span> کتابی معروف درباره خاطرات جنگ تحمیلی – محصول مرداب – بهره - دارو
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 11 </span> بازی دوران کودکی – نشان دهنده راه – کجاست؟
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 12 </span> در امنیت و سلامت کامل – پایان پذیر – امر به آشامیدن
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 13 </span> در حال دویدن – فراری
+                            </li>
+
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 14 </span> وکیل – تاوه نان پزی – سوگند
+                            </li>
+                            <li class=" list-group-item border-0">
+                                <span class="horzintal_numbers"> 15 </span> زنده – از آثار شیخ بهایی
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
 </body>
 
