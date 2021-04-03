@@ -214,12 +214,11 @@ table {
 }
 
 #vertical_row {
-    background-color: brown;
-    position: absolute;
+    margin-right: 11.9in;
+    position: absolute
 }
 
 #vertical_question {
-    margin-right: 3cm;
     padding-top: 1cm;
     max-width: 3.5in;
     text-overflow: ellipsis;
@@ -235,7 +234,6 @@ table {
 #question_box_ver {
     max-height: 75vh;
     max-width: 3.1in;
-    margin-right: 0.2cm;
     overflow-x: hidden;
     overflow-y: scroll;
 }
